@@ -1,0 +1,4 @@
+div, body, html, .container{
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
