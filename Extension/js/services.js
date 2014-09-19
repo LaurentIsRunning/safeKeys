@@ -1,5 +1,5 @@
 /**
- * Created by Laurent on 31/10/13.
+ * Created by Laurent De Plaen on 31/10/13.
  */
 
 safeKeys.factory('chromeHelper', function() {

@@ -2,13 +2,15 @@
 <html ng-app  = "safeKeys" ng-csp style="min-width:250px;">
   <head>
     <title>Safe Keys</title>
+    <link href="css/angular-csp.css" rel="stylesheet" media="screen">
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="css/bootstrap-theme.min.css" rel="stylesheet" media="screen">
+    <link href="css/safekeys.css" rel="stylesheet" media="screen">
   </head>
   <body>
       <div class="container">
             <h1>Safe Keys</h1>
-            <div class="form-group" ng-controller="SmarfItemCtrl">
+            <div class="form-group" ng-controller="popupCtrl">
                 <form novalidate class="simple-form" ng-submit = "createPassword()">
                     <div class="input-group input-group-sm">
                         <input type="text" ng-model="selectedItemName" class="form-control" placeholder="The configuration's name" tooltip="The password configuration name" tooltip-placement="bottom"/>
@@ -44,6 +46,12 @@
                       </span>
                       <input id="password" ng-model="password" type="text" class="form-control" placeholder="Password">
                     </div>
+                    <br>
+                    <div class = "well" ng-show="password">
+                        <div class = "qr_center">
+                            <qr text="password" image="false" size = "100"></qr>
+                        </div>
+                    </div>
                 </form>
                 <div>
                    <span ng-show="user">{{user.displayName}} | <a ng-click="logout()">Logout</a></span>
@@ -51,6 +59,7 @@
                 </div>
                 <div ng-show="warningMessage" class="alert alert-warning">{{warningMessage}}</div>
             </div>
+
         </div>
 
       <script src="js/libs/jquery-2.0.3.min.js"></script>
@@ -59,12 +68,15 @@
       <script src="js/libs/enc-base64-min.js"></script>
       <script src="js/libs/bootstrap.min.js"></script>
       <script src="js/libs/angular.min.js"></script>
-      <script src="js/libs/ui-bootstrap-tpls-0.7.0.min.js"></script>
+      <script src="js/libs/angular-animate.min.js"></script>
+      <script src="js/libs/ui-bootstrap-tpls-0.11.0.min.js"></script>
       <script src="js/libs/firebase.js"></script>
       <script src="js/libs/firebase-simple-login.js"></script>
+      <script src="js/libs/qrcode.js"></script>
+      <script src="js/libs/angular-qr.js"></script>
       <script src="js/localStorageExtension.js"></script>
       <script src="js/constants.js"></script>
-      <script src="js/controllers.js"></script>
+      <script src="js/controllers/controllers.js"></script>
       <script src="js/services.js"></script>
   </body>
 </html>

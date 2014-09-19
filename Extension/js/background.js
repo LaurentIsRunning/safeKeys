@@ -1,5 +1,5 @@
 /**
- * Created by Laurent on 5/11/13.
+ * Created by Laurent De Plaen on 5/11/13.
  */
 
 var savedUser;
