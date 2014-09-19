@@ -1,5 +1,5 @@
 /**
- * Created by Laurent on 28/11/13.
+ * Created by Laurent De Plaen on 28/11/13.
  */
-var safekeysWebsiteUrl = 'http://www.therunningbrains.com';
-var safekeysSettingsUrl = 'http://www.therunningbrains.com/#/settings';
+var safekeysWebsiteUrl = 'http://localhost/www.therunningbrains.com/';
+var safekeysSettingsUrl = 'http://localhost/www.therunningbrains.com/#/settings';

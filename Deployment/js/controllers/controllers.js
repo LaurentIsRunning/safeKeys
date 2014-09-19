@@ -1,12 +1,12 @@
 /**
- * Created by Laurent on 28/10/13.
+ * Created by Laurent De Plaen on 28/10/13.
  */
-var safeKeys = angular.module('safeKeys', ['ui.bootstrap']);
+var safeKeys = angular.module('safeKeys', ['ui.bootstrap', 'ja.qr', 'ngAnimate']);
 
-safeKeys.controller('SmarfItemCtrl', function ($scope, $timeout, chromeHelper, cryptoHelper)
+safeKeys.controller('popupCtrl', function ($scope, $timeout, chromeHelper, cryptoHelper)
 {
     var configRef;
-
+    $scope.password = "";
     $scope.isSaveRequired = false;
     $("#secretKey").focus();
 
@@ -42,7 +42,7 @@ safeKeys.controller('SmarfItemCtrl', function ($scope, $timeout, chromeHelper, c
     $scope.formData = {};
 
     $scope.selectedItem = {};
-    $scope.selectedItem.specialCharacters = '.-!_*?+&';
+    $scope.selectedItem.specialCharacters = '.-!_*?+&()';
     $scope.selectedItem.passwordSize = 12;
     $scope.selectedItem.creationDate = new Date().getTime();
 

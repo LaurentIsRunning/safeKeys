@@ -1,5 +1,5 @@
 /**
- * Created by Laurent on 1/01/14.
+ * Created by Laurent De Plaen on 1/01/14.
  */
 
 Storage.prototype.setObject = function(key, value) {
