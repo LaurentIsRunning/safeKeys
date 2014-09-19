@@ -1,7 +1,7 @@
 /**
  * Created by Laurent De Plaen on 28/10/13.
  */
-var safeKeys = angular.module('safeKeys', ['ui.bootstrap', 'ja.qr']);
+var safeKeys = angular.module('safeKeys', ['ui.bootstrap', 'ja.qr', 'ngAnimate']);
 
 safeKeys.controller('popupCtrl', function ($scope, $timeout, chromeHelper, cryptoHelper)
 {
