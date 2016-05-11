@@ -1,9 +1,0 @@
-div, body, html, .container{
-    overflow-y: hidden;
-    overflow-x: hidden;
-}
-
-.qr_center{
-    width: 100px;
-    margin: 0 auto;
-}
