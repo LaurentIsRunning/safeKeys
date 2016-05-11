@@ -4,3 +4,5 @@ Deployment/key.pem
 /SafeKeys/.vs/SafeKeys/v14/*.suo
 /SafeKeys/app/key.pem
 /SafeKeys/SafeKeys.csproj.user
+/SafeKeys/bin
+/SafeKeys/obj
