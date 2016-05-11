@@ -39,22 +39,58 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Content Include="app\img\icon.png" />
+    <Content Include="app\css\angular-csp.css" />
+    <Content Include="app\css\bootstrap-theme.min.css" />
+    <Content Include="app\css\bootstrap.min.css" />
+    <Content Include="app\css\safekeys.css" />
+    <Content Include="app\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="app\icons\FB-f-Logo__blue_29.png" />
+    <Content Include="app\icons\GitHub-Mark-32px.png" />
+    <Content Include="app\icons\google-icon 32.png" />
+    <Content Include="app\icons\icon.png" />
+    <Content Include="app\icons\icon128.png" />
+    <Content Include="app\icons\icon16.png" />
+    <Content Include="app\icons\icon32.png" />
+    <Content Include="app\icons\icon48.png" />
+    <Content Include="app\icons\Twitter_logo_blue 29.png" />
+    <Content Include="app\js\background.js" />
+    <Content Include="app\js\constants.js" />
+    <Content Include="app\js\controllers\controllers.js" />
+    <Content Include="app\js\libs\aes.js" />
+    <Content Include="app\js\libs\angular-animate.min.js" />
+    <Content Include="app\js\libs\angular-qr.js" />
+    <Content Include="app\js\libs\angular.min.js" />
+    <Content Include="app\js\libs\bootstrap.min.js" />
+    <Content Include="app\js\libs\enc-base64-min.js" />
+    <Content Include="app\js\libs\extensions.js" />
+    <Content Include="app\js\libs\firebase-simple-login.js" />
+    <Content Include="app\js\libs\firebase.js" />
+    <Content Include="app\js\libs\jquery-2.0.3.min.js" />
+    <Content Include="app\js\libs\qrcode.js" />
+    <Content Include="app\js\libs\sha256.js" />
+    <Content Include="app\js\libs\ui-bootstrap-tpls-0.11.0.min.js" />
+    <Content Include="app\js\localStorageExtension.js" />
+    <Content Include="app\js\services\services.js" />
     <Content Include="app\popup.html" />
-    <Content Include="app\popup.js" />
     <Content Include="Properties\build\lib\Ionic.Zip.DLL" />
     <Content Include="Properties\build\lib\MSBuild.ExtensionPack.dll" />
-    <Content Include="screenshots\screenshot.png" />
     <Content Include="index.htm" />
     <Content Include="Properties\build\ligershark.chrome.targets" />
     <Content Include="screenshots\readme.txt" />
+    <Content Include="app\js\libs\angular-animate.min.js.map" />
+    <Content Include="app\js\libs\angular.min.js.map" />
+    <Content Include="app\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="app\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="app\fonts\glyphicons-halflings-regular.woff" />
     <None Include="scripts\_references.js" />
     <None Include="scripts\chrome-api-vsdoc.js" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="app\manifest.json" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="app\js\directives\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
