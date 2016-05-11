@@ -1,3 +1,4 @@
 .idea
 Deployment.zip
 Deployment/key.pem
+/SafeKeys/.vs/SafeKeys/v14/*.suo

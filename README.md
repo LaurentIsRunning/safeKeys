@@ -1,4 +1,4 @@
-safeKeys
+SafeKeys
 ========
 
 Password Management Application
