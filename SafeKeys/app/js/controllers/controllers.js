@@ -11,24 +11,36 @@ safeKeys.controller('popupCtrl', function ($scope, $timeout, chromeHelper, crypt
     $("#secretKey").focus();
 
     var rootRef = new Firebase("https://safestkeys.firebaseio.com");
+
     var savedUser = chromeHelper.getSavedUser();
 
-    $timeout(function() {
-        if(savedUser) {
-            rootRef.auth(savedUser.firebaseAuthToken, function(error, result) {
-                if (error) {
-                    console.log('Login Failed!', error);
-                } else {
-                    console.log('Authenticated successfully with payload:', result.auth);
-                    console.log('Auth expires at:', new Date(result.expires * 1000));
-                    $scope.$apply(function(){$scope.user = savedUser;});
-                }
-            });
-        }
-    });
+    $timeout(tryToConnect);
 
-    $scope.login = function() { window.open(safekeysWebsiteUrl); };
-    $scope.goToSettings = function() { window.open(safekeysSettingsUrl); };
+    function tryToConnect() {
+      if (savedUser) {
+        rootRef.auth(savedUser.firebaseAuthToken,
+          function(error, result) {
+            if (error) {
+              console.log('Login Failed!', error);
+            }
+            else {
+              console.log('Authenticated successfully with payload:', result.auth);
+              console.log('Auth expires at:', new Date(result.expires * 1000));
+              $scope.$apply(function() { $scope.user = savedUser; });
+            }
+          });
+      }
+      else
+      {
+        savedUser = chromeHelper.getSavedUser();
+        $timeout(tryToConnect, 500);
+      }
+    }
+
+    $scope.login = function () { window.open(safekeysWebsiteUrl); };
+
+    $scope.goToSettings = function () { window.open(safekeysSettingsUrl); };
+
     $scope.logout = function() {
         rootRef.unauth();
         $scope.user = null;

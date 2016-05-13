@@ -39,6 +39,39 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="app.beta\css\angular-csp.css" />
+    <Content Include="app.beta\css\bootstrap-theme.min.css" />
+    <Content Include="app.beta\css\bootstrap.min.css" />
+    <Content Include="app.beta\css\safekeys.css" />
+    <Content Include="app.beta\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="app.beta\icons\FB-f-Logo__blue_29.png" />
+    <Content Include="app.beta\icons\GitHub-Mark-32px.png" />
+    <Content Include="app.beta\icons\google-icon 32.png" />
+    <Content Include="app.beta\icons\icon.png" />
+    <Content Include="app.beta\icons\icon128.png" />
+    <Content Include="app.beta\icons\icon16.png" />
+    <Content Include="app.beta\icons\icon32.png" />
+    <Content Include="app.beta\icons\icon48.png" />
+    <Content Include="app.beta\icons\Twitter_logo_blue 29.png" />
+    <Content Include="app.beta\js\background.js" />
+    <Content Include="app.beta\js\constants.js" />
+    <Content Include="app.beta\js\controllers\controllers.js" />
+    <Content Include="app.beta\js\libs\aes.js" />
+    <Content Include="app.beta\js\libs\angular-animate.min.js" />
+    <Content Include="app.beta\js\libs\angular-qr.js" />
+    <Content Include="app.beta\js\libs\angular.min.js" />
+    <Content Include="app.beta\js\libs\bootstrap.min.js" />
+    <Content Include="app.beta\js\libs\enc-base64-min.js" />
+    <Content Include="app.beta\js\libs\extensions.js" />
+    <Content Include="app.beta\js\libs\firebase-simple-login.js" />
+    <Content Include="app.beta\js\libs\firebase.js" />
+    <Content Include="app.beta\js\libs\jquery-2.0.3.min.js" />
+    <Content Include="app.beta\js\libs\qrcode.js" />
+    <Content Include="app.beta\js\libs\sha256.js" />
+    <Content Include="app.beta\js\libs\ui-bootstrap-tpls-0.11.0.min.js" />
+    <Content Include="app.beta\js\localStorageExtension.js" />
+    <Content Include="app.beta\js\services\services.js" />
+    <Content Include="app.beta\popup.html" />
     <Content Include="app\css\angular-csp.css" />
     <Content Include="app\css\bootstrap-theme.min.css" />
     <Content Include="app\css\bootstrap.min.css" />
@@ -83,6 +116,12 @@
     <Content Include="app\fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="app\fonts\glyphicons-halflings-regular.woff" />
     <Content Include="app\key.pem" />
+    <Content Include="app.beta\manifest.json" />
+    <Content Include="app.beta\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="app.beta\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="app.beta\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="app.beta\js\libs\angular-animate.min.js.map" />
+    <Content Include="app.beta\js\libs\angular.min.js.map" />
     <None Include="scripts\_references.js" />
     <None Include="scripts\chrome-api-vsdoc.js" />
   </ItemGroup>
@@ -90,6 +129,7 @@
     <Content Include="app\manifest.json" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="app.beta\js\directives\" />
     <Folder Include="app\js\directives\" />
   </ItemGroup>
   <PropertyGroup>

@@ -11,7 +11,7 @@
       <div class="container">
             <h1>Safe Keys</h1>
             <div class="form-group" ng-controller="popupCtrl">
-                <form novalidate class="simple-form" ng-submit = "createPassword()">
+                <form novalidate class="simple-form" ng-submit = "createPassword()" ng-show="user">
                     <div class="input-group input-group-sm">
                         <input type="text" ng-model="selectedItemName" class="form-control" placeholder="The configuration's name" tooltip="The password configuration name" tooltip-placement="bottom"/>
                         <span class="input-group-btn">
@@ -54,8 +54,10 @@
                     </div>
                 </form>
                 <div>
-                   <span ng-show="user">{{user.displayName}} | <a ng-click="logout()">Logout</a></span>
-                   <span ng-hide="user"><a ng-click="login()">Login</a></span>
+                  <span ng-show="user">{{user.displayName}} | <a ng-click="logout()">Logout</a></span>
+                  <span ng-hide="user">
+                    <iframe src="http://therunningbrains.com/safekeyslogin" style="height:220px; border:0"></iframe>
+                  </span>
                 </div>
                 <div ng-show="warningMessage" class="alert alert-warning">{{warningMessage}}</div>
             </div>
