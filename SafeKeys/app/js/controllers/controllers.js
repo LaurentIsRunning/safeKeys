@@ -98,19 +98,10 @@ safeKeys.controller('popupCtrl', function ($scope, $timeout, chromeHelper, crypt
                     var value = dataSnapshot.val();
                     if(value)
                     {
-                        if(value < 100)
-                        {
-                            console.log('Save new configuration');
-                            configRef.set($scope.selectedItem);
-                            countRef.set(value + 1);
-                            $scope.isNewConfiguration = false;
-                        }
-                        else{
-                            $scope.$apply(function(){
-                                $scope.warningMessage = 'The allowed number of configurations is exceeded.';
-                            });
-                            console.log('The allowed number of configurations is exceeded.');
-                        }
+                        console.log('Save new configuration at n°' + value);
+                        configRef.set($scope.selectedItem);
+                        countRef.set(value + 1);
+                        $scope.isNewConfiguration = false;
                     }
                     else
                     {

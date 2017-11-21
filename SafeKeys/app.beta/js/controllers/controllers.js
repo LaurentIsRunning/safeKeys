@@ -86,7 +86,7 @@ safeKeys.controller('popupCtrl', function ($scope, $timeout, chromeHelper, crypt
                     var value = dataSnapshot.val();
                     if(value)
                     {
-                        if(value < 100)
+                        if(value < 1000)
                         {
                             console.log('Save new configuration');
                             configRef.set($scope.selectedItem);

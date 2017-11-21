@@ -55,9 +55,7 @@
                 </form>
                 <div>
                   <span ng-show="user">{{user.displayName}} | <a ng-click="logout()">Logout</a></span>
-                  <span ng-hide="user">
-                    <iframe src="http://therunningbrains.com/safekeyslogin" style="height:220px; border:0"></iframe>
-                  </span>
+                  <span ng-hide="user"><a ng-click="login()">Login</a></span>
                 </div>
                 <div ng-show="warningMessage" class="alert alert-warning">{{warningMessage}}</div>
             </div>
